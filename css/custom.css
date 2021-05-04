@@ -1,0 +1,109 @@
+/*
+# ------------------------------------------------------
+# eBayLister - An eBay Listing Creator
+# Copyright © 2021 David Rodgers
+# Released under the terms of the MIT License
+# ------------------------------------------------------
+*/
+
+.gitLink a:link { color: rgb(170, 52, 52); }
+.gitLink a:visited { color: rgb(170, 52, 52); }
+.gitLink a:hover { color: rgb(223, 47, 47); }
+
+.timeStamp { color: rgb(151, 65, 65); }
+
+.timeCreated { 
+	font-weight: bold; 
+	font-size: 16px; 
+	color:#59595a;
+}
+
+.success { color: green; }
+
+.warning { color: red; }
+
+.itemID { color: darkseagreen; }
+
+.headerMenuIcon {
+	margin-right: 10px;
+}
+
+/* Font Awesome */
+/* Create - fa-plus */
+.fa-plus {
+	color: green;
+}
+/* Edit - fa-pencil,  fa-edit */
+.fa-edit {
+	color: green;
+}
+.fa-edit .menu {
+	color: black;
+}
+/* View - fa-eye */
+.fa-eye {
+	color: steelblue;
+}
+/* Delete - fa-trash, fa-trash-o */
+.fa-trash , .fa-trash-o {
+	color: darkred;
+}
+/* Close —  fa-times,  fa-times-circle,  fa-times-circle-o */
+.fa-times {
+	color: red;
+}
+/* Settings —  fa-cog,  fa-cogs,  fa-sliders */
+.fa-cog {
+	color: black;
+}
+/* Menu —  fa-bars */
+.fa-bars {
+	color: black;
+}
+/* Home —  fa-home */
+.fa-home {
+	color: black;
+}
+/* Search —  fa-search */
+.fa-search {
+	color: black;
+}
+/* Code - fa-code, fa-file-code-o */
+.fa-file-code-o {
+	color: black;
+}
+
+.itemDesc { 
+	margin-left: 10px; 
+	margin-right: 10px; 
+}
+
+.panel-default>.panel-heading-dragon {
+	background: #a43343;
+	color: #fff;
+}
+
+.panel-default>.panel-heading-ocean {
+	background: #2980B9;
+	color: #fff;
+}
+
+.panel-default>.panel-heading-fire {
+	background: #E67E22;
+	color: #fff;
+}
+
+.panel-default>.panel-heading-forest {
+	background: #27AE60;
+	color: #fff;
+}
+
+.panel-default>.panel-heading-stone {
+	background: #707B7C;
+	color: #fff;
+}
+
+.panel-default>.panel-heading-sun {
+	background: #F1C40F;
+	color: #fff;
+}
