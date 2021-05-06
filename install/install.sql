@@ -38,13 +38,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `config` (
   `id` int(11) NOT NULL,
-  `pricing` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `offers` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `shipping` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `pricingTitle` varchar(27) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `offerTitle` varchar(27) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `shippingTitle` varchar(27) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `pricing` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `offers` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `shipping` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pricingTitle` varchar(27) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `offerTitle` varchar(27) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `shippingTitle` varchar(27) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `config`
@@ -63,20 +63,20 @@ CREATE TABLE `listings` (
   `id` int(4) UNSIGNED NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp(),
   `lastModified` timestamp NOT NULL DEFAULT current_timestamp(),
-  `itemTitle` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `titleColor` varchar(16) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `headImage` varchar(256) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `itemTitle` varchar(512) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `titleColor` varchar(16) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `headImage` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `headImageHeight` int(8) DEFAULT NULL,
-  `headerColor` varchar(16) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `itemHeading` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `itemDescription` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `addInfo` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `itemLocation` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `listInfo1` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `listInfo2` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `listInfo3` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `headerColor` varchar(16) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `itemHeading` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `itemDescription` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `addInfo` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `itemLocation` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `listInfo1` varchar(512) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `listInfo2` varchar(512) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `listInfo3` varchar(512) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `localPickup` int(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `listings`
